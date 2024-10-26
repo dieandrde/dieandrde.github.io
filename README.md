@@ -1,0 +1,1 @@
+Web project that collects user preferences about video game genres through an interactive form. Developed with HTML and CSS. Responsive design and optimized to offer a friendly user experience. I focused on giving it a retro, "arcade" style look.
