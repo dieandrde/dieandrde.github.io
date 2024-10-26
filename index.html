@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto formulario</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+   <div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Videogames Form</h1>
+        <p id="description" class="description text-center">
+          Form to find out your video game preferences
+        </p>
+      </header>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="name" class="form-control" placeholder="What is your name?" required="">
+     
+      </div>
+
+      <div class="form-group">
+        
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="form-control" type="email" name="email" placeholder="Enter your Email" required="">
+ 
+      </div>
+
+      <div class="form-group">
+
+        <label id="number-label" for="age">Age</label>
+        <input id="number" min="8" max="99" type="number" name="age"  class="form-control" placeholder="What is your age?">
+
+      </div>
+
+      <div class="form-group">
+        <p>What is your genre?</p>
+        <label><input name="sex" value="male" type="radio" class="input-radio" checked="">Male</label>
+        <label><input name="sex" value="female" type="radio" class="input-radio" checked="">Female</label>
+        <label><input name="sex" value="other-sex" type="radio" class="input-radio" checked="">Other</label>
+
+      </div>
+
+      <div class="form-group">
+          <p>What do you do for a living?</p>
+          <label><input name="live" value="study" type="radio" class="input-radio" checked="">I study</label>
+          <label><input name="live" value="work" type="radio" class="input-radio" checked="">I work</label>
+          <label><input name="live" value="study-work" type="radio" class="input-radio" checked="">I study and work</label>
+          <label><input name="live" value="nothing" type="radio" class="input-radio" checked="">I do nothing, I just play video games.</label>
+  
+      <div class="form-group">
+
+        <p>What genre of video games do you consider your favorite?</p>
+        <select id="dropdown" name="genre" class="form-control" required="">
+          <option disabled="" selected="" value="">Select your favorite genre</option>
+          <option value="fps">FPS (First Person Shooter)</option>
+          <option value="rpf">RPG (Role Play Game)</option>
+          <option value="sandbox">Sandbox</option>
+          <option value="arcade">Arcade</option>
+          <option value="sports">Sports</option>
+          <option value="other">Other</option>
+        </select>
+
+
+      </div>
+
+      <div class="form-group">
+        <p>Do you consider yourself a "gamer"?</p>
+        <label><input name="gamer" value="yes" type="radio" class="input-radio" checked="">Yes, I am a gamer and I play video games very often</label>
+        <label><input name="gamer" value="maybe" type="radio" class="input-radio" checked="">Maybe, I just play video games regularly</label>
+        <label><input name="gamer" value="hater" type="radio" class="input-radio" checked="">No, I only play video games very occasionally. I hate gamers.</label>
+      </div>
+
+      <div class="form-group">
+        <p>How many hours a week do you play video games?</p>
+        <label><input name="hours" value="0-6" type="checkbox" class="input-checkbox">0-6</label>
+        <label><input name="hours" value="6-12" type="checkbox" class="input-checkbox">6-12</label>
+        <label><input name="hours" value="12-18" type="checkbox" class="input-checkbox">12-18</label>
+        <label><input name="hours" value="all-day" type="checkbox" class="input-checkbox">All day, every day</label>
+      </div>
+
+      <div class="form-group">
+        <p>What platforms do you play on?</p>
+        <label><input name="prefer" value="playstation" type="checkbox" class="input-checkbox">Playstation</label>
+        <label><input name="prefer" value="xbox" type="checkbox" class="input-checkbox">Xbox</label>
+        <label><input name="prefer" value="nintendo" type="checkbox" class="input-checkbox">Nintendo</label>
+        <label><input name="prefer" value="pc" type="checkbox" class="input-checkbox">PC</label>
+      </div>
+
+
+      <div class="form-group">
+        <p>What is your favorite video game? Justify your answer</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your answer here..."></textarea>
+      </div>
+      
+      <div class="form-group">
+       <button id="submit" class="submit-button" type="submit">
+         Submit
+       </button>
+      </div>
+
+
+
+
+
+
+    </form>
+
+    <footer>
+      <div class="footer-content">
+          <p>Project carried out by Diego E. Andrade</p>
+      </div>
+  </footer>
+
+  </body>
+</html>
